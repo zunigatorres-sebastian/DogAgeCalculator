@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DogAgeCalculator.DAL\DogAgeCalculator.DAL.csproj" />
+    <ProjectReference Include="..\DogAgeCalculator.Entities\DogAgeCalculator.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
