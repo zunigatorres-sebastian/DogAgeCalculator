@@ -30,7 +30,8 @@ The dog age calculation logic and balance adjustments implemented in this projec
 3. Restore and Run 
 
 ## Requirements
-To run this project, you only need the .NET Runtime installed. You do **not** need Microsoft Word to generate the reports
+- [**.NET 8.0 Desktop Runtime:**](https://dotnet.microsoft.com/download/dotnet/8.0) Required to run the application.
+- **No Office Required:** You do not need Microsoft Word installed to generate or process reports (thanks to OpenXml).
 
 ## Author
 Sebastián Zúñiga Torres
