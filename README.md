@@ -19,3 +19,6 @@ The dog age calculation logic and balance adjustments implemented in this projec
 
 ## Requirements
 To run this project, you only need the .NET Runtime installed. You do **not** need Microsoft Word to generate the reports
+
+## Author
+Sebastián Zúñiga Torres
