@@ -66,7 +66,7 @@ namespace DogAgeCalculator.BLL
                 throw new Exception("Invalid value for dog's weight.");
             }
 
-            int dog_Weight = int.Parse(dogWeight);
+            double dog_Weight = double.Parse(dogWeight);
             if (dog_Weight < 1 || dog_Weight > 30)
             {
                 throw new Exception("The dog's weight is out of range; it must be between 1 and 30 kg.");

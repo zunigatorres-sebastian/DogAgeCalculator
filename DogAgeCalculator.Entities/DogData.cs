@@ -13,7 +13,7 @@ namespace DogAgeCalculator.Entities
         public string Breed { get; set; } = string.Empty;
         public int Age { get; set; }
         public int ConvertedAge { get; set; }
-        public float Weight { get; set; }
+        public double Weight { get; set; }
         public DateTime Date { get; set; }
     }
 }
