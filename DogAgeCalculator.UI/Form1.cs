@@ -30,7 +30,8 @@ namespace DogAgeCalculator.UI
             dgv.Columns[2].Name = "Dog breed";
             dgv.Columns[3].Name = "Dog's age";
             dgv.Columns[4].Name = "Converted age";
-            dgv.Columns[5].Name = "Dog's weight";
+            dgv.Columns[5].Name = "Dog's weight in kg";
+            dgv.Columns[5].DefaultCellStyle.Format = "N2";
             dgv.Columns[6].Name = "Date of consultation";
 
             LoadDgvData();
