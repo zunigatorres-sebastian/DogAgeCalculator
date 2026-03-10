@@ -61,12 +61,11 @@ namespace DogAgeCalculator.BLL
                 throw new Exception("The dog's age is out of range; it must be between 0 and 30 years.");
             }
 
-            if (string.IsNullOrWhiteSpace(dogWeight) || !dogWeight.All(char.IsDigit))
+            if (!double.TryParse(dogWeight, out double dog_Weight))
             {
                 throw new Exception("Invalid value for dog's weight.");
             }
 
-            double dog_Weight = double.Parse(dogWeight);
             if (dog_Weight < 1 || dog_Weight > 30)
             {
                 throw new Exception("The dog's weight is out of range; it must be between 1 and 30 kg.");
