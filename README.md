@@ -2,13 +2,21 @@
 
 Windows Forms application in C# to calculate the human age of dogs and generate reports
 
-## Project Disclaimer
+## Note
 The dog age calculation logic and balance adjustments implemented in this project are **fictional**
+
+## Architecture Overview
+The application was developed using a layered architecture to separate responsibilities and improve code organization and maintainability.
+
+- **UI (User Interface):** Handles user interaction through Windows Forms components and dynamic data visualization.
+- **BLL (Business Logic Layer):** Contains the business rules, validations, and fictional dog age conversion logic.
+- **DAL (Data Access Layer):** Manages file operations and data persistence for record storage and retrieval.
+- **Entities:** Defines the data models and objects used across the application layers.
 
 ## Features
 - **Age Calculation:** Converts to human years based on the dog's age and fictional rules.
 - **Word Reports:** Generates a .docx file using **OpenXML** (No Microsoft Office license required).
-- **Data Persistence:** Saves a history of records in .text file.
+- **Text File Storage:** Saves a history of records in .text file.
 - **Layered Architecture:** Developed using Entities, DAL, BLL, UI for clean code separation.
 - **UI Management:** Features a dynamic **DataGridView** with automatic data updates.
 
