@@ -1,9 +1,8 @@
 # DogAgeCalculator
 
-Windows Forms application in C# to calculate the human age of dogs and generate reports
+High-performance Windows Forms application designed for veterinary data management, age conversion to human age, and automated generation of clinical reports.
 
-## Note
-The dog age calculation logic and balance adjustments implemented in this project are **fictional**
+*Note: The biological conversion logic follows specific business rules designed for this implementation.*
 
 ## Architecture Overview
 The application was developed using a layered architecture to separate responsibilities and improve code organization and maintainability.
@@ -13,12 +12,12 @@ The application was developed using a layered architecture to separate responsib
 - **DAL (Data Access Layer):** Manages file operations and data persistence for record storage and retrieval.
 - **Entities:** Defines the data models and objects used across the application layers.
 
-## Features
-- **Age Calculation:** Converts to human years based on the dog's age and fictional rules.
-- **Word Reports:** Generates a .docx file using **OpenXML** (No Microsoft Office license required).
-- **Text File Storage:** Saves a history of records in .text file.
-- **Layered Architecture:** Developed using Entities, DAL, BLL, UI for clean code separation.
-- **UI Management:** Features a dynamic **DataGridView** with automatic data updates.
+## Key Features
+- **Dual Export System:** Automatically generates **.DOCX** clinical reports for clients and maintains technical **.TXT** logs for data persistence.
+- **Clean Architecture:** Built using a 4-layer pattern (UI, BLL, DAL, Entities) to ensure scalability and maintainability.
+- **Age Calculator:** Converts biological age into human-equivalent stages to assist in the categorization and prioritization of medical treatments for different canine life cycles.
+- **Office-less Integration:** Leverages **OpenXML SDK** to create structured Word documents, eliminating the need for local Interop or Office licenses.
+- **Real-time Data Visualization:** Dynamic UI updates via DataGridView, synchronized with the persistence layer.
 
 ## Technologies
 - **IDE:** Visual Studio 2022
@@ -39,7 +38,7 @@ The application was developed using a layered architecture to separate responsib
 
 ## Requirements
 - [**.NET 8.0 Desktop Runtime:**](https://dotnet.microsoft.com/download/dotnet/8.0) Required to run the application.
-- **No Office Required:** You do not need Microsoft Word installed to generate or process reports (thanks to OpenXml).
+- **Infrastructure:** Lightweight and portable. The application is **environment-independent**, meaning it doesn't require Word, Excel, or external database drivers to function (standalone file persistence)
 
 ## Author
 Sebastián Zúñiga Torres
